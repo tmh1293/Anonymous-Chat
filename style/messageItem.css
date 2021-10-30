@@ -1,0 +1,144 @@
+.messages-container {
+    display: flex;
+}
+
+.messages-container button {
+    transition: 0.25s all ease-in-out;
+    opacity: 0;
+    cursor: url('../img/mouse-pointer.png'), auto;
+}
+
+.messages-container button:hover {
+    color: #3888ff;
+}
+
+.messages-container:hover button {
+    opacity: 1;
+}
+
+.message-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 1500px;
+    word-wrap: break-word;
+}
+
+.spanReply {
+    width: 2.5px;
+    margin: 0px 15px 0px 3px;
+    background-color: #3888ff;
+}
+
+.message-item>.sender {
+    font-size: 17px;
+    font-family: 'Trispace', sans-serif;
+    color: white;
+    padding: 0px 0px 7px 20px;
+}
+
+.content {
+    background-color: black;
+    color: lightgray;
+    font-family: 'Trispace', sans-serif;
+    font-size: 16px;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.message-item.my-message {
+    color: white;
+    display: flex;
+}
+
+.message-item.my-message>.sender {
+    color: white;
+    display: flex;
+}
+
+.contentContainer {
+    display: flex;
+}
+
+.fas {
+    height: 80%;
+    margin-top: auto;
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+.fa-reply-all {
+    color: white;
+}
+
+.fa-reply-all:hover {
+    transition: 0.3s all ease-in-out;
+    color: rgb(163, 162, 162);
+}
+
+.reply-container {
+    text-align: left;
+    background-color: rgb(56, 56, 56);
+    color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    max-width: 1500px;
+}
+
+.repArea {
+    word-wrap: break-word;
+    max-width: 95%;
+}
+
+.replynameTitle {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4e84d6;
+}
+
+@media screen and (max-width:541px) {
+    .message-item {
+        margin: 5px;
+        max-width: 465px;
+    }
+    .message-item>.sender {
+        font-size: 18px;
+        padding: 0px 0px 5px 0px;
+    }
+    .content {
+        font-size: 15px;
+        padding: 16px;
+    }
+    .fas {
+        height: 80%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .message-item {
+        max-width: 300px;
+    }
+    .message-item>.sender {
+        font-size: 16px;
+        padding: 0px 0px 5px 0px;
+    }
+    .content {
+        font-size: 14px;
+        padding: 15px;
+    }
+    .fas {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .message-item {
+        margin: 5px;
+        max-width: 255px;
+    }
+}

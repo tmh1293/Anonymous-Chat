@@ -1,0 +1,210 @@
+@keyframes goin {
+    from {
+        opacity: 0;
+        top: 300px;
+    }
+    to {
+        opacity: 1;
+        top: 150px
+    }
+}
+
+.rule-modal {
+    padding: 30px;
+    border-radius: 7px;
+    background-color: black;
+    width: 550px;
+    height: 45%;
+    animation: goin 0.5s;
+    color: #fff;
+    border: 1px solid #00E6F6;
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.rule-modal .title {
+    font-family: 'Trispace', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 0px
+}
+
+.rule-modal p {
+    padding: 10px 0px
+}
+
+.rule-modal button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: url('../img/mouse-pointer.png'), auto;
+}
+
+.btnConfirm {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: url('../img/mouse-pointer.png'), auto;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    margin-top: 20px;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.btnConfirm:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.btnConfirm :nth-child(2) {
+    filter: hue-rotate(110deg);
+}
+
+.btnConfirm span {
+    position: absolute;
+    display: block;
+}
+
+.btnConfirm span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.btnConfirm span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #04ff04f5);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.btnConfirm span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.btnConfirm span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:541px) {
+    .rule-modal {
+        padding: 16px 25px 0px 25px;
+        width: 450px;
+        height: 45%;
+    }
+    .rule-modal .title {
+        margin: 20px 0px;
+        font-size: 16px;
+    }
+    .rule-modal p {
+        padding: 7px 0px
+    }
+    .btnConfirm {
+        font-size: 14px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .rule-modal {
+        width: 85%;
+        height: 470px;
+    }
+    .rule-modal .title {
+        font-size: 15px;
+    }
+    .btnConfirm {
+        font-size: 13px;
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .rule-modal {
+        padding: 14px 23px 0px 23px;
+        width: 90%;
+        height: 460px;
+    }
+    .rule-modal .title {
+        margin: 18px 0px;
+        font-size: 15px;
+    }
+    .rule-modal p {
+        padding: 6px 0px
+    }
+    .btnConfirm {
+        font-size: 13px;
+        margin-top: 30px;
+    }
+}

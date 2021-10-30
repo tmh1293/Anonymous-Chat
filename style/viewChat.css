@@ -1,0 +1,194 @@
+.footerContainer {
+    width: 97%;
+    margin: auto;
+    padding-bottom: 1.5%;
+}
+
+.nav-bar {
+    height: 46px;
+    padding: 0 0 0 8px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #ffffff;
+    display: flex;
+}
+
+.input-message {
+    font-family: 'Trispace', sans-serif;
+    font-size: 16px;
+    height: 55px;
+    padding: 0 0 0 1%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    border: 1px solid rgb(179, 175, 175);
+    outline: none;
+}
+
+.composer {
+    position: relative;
+    border-radius: 1px;
+}
+
+.reactionIcon {
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+    margin-right: 1%;
+    margin-left: 0.50%;
+    width: 35px;
+    height: 36px;
+    background-size: cover;
+    background-image: url(../img/reactionIcon.png);
+}
+
+.reactionIcon:hover {
+    transition: 0.3s all ease-in-out;
+    background-image: url(../img/reactionIconHover.png);
+}
+
+.btnSendPic {
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: url('../img/mouse-pointer.png'), auto;
+    margin-right: 1.3%;
+    margin-left: 0.50%;
+    width: 35px;
+    height: 36px;
+    background-size: cover;
+    background-image: url(../img/btnSendImg.png);
+}
+
+.btnSendPic:hover {
+    transition: 0.3s all ease-in-out;
+    background-image: url(../img/btnSendImgHover.png);
+}
+
+.btnSendAudio {
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: url('../img/mouse-pointer.png'), auto;
+    width: 39px;
+    height: 36px;
+    background-size: cover;
+    background-image: url(../img/audioImg.png);
+}
+
+.btnSendAudio:hover {
+    transition: 0.3s all ease-in-out;
+    background-image: url(../img/audioImgHover.png);
+}
+
+.btn-send {
+    height: 30px;
+    width: 38px;
+    position: absolute;
+    right: 1.2%;
+    top: 20%;
+    cursor: url('../img/mouse-pointer.png'), auto;
+    border: none;
+    background-image: url(../img/btnSend.png);
+    background-size: cover;
+}
+
+.btn-send:hover {
+    transition: 0.4s all ease-in-out;
+    background-image: url(../img/btnSendHover.png);
+}
+
+.reply-bar {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+@media screen and (max-width:541px) {
+    .footerContainer {
+        padding-bottom: 2%;
+        width: 94%;
+    }
+    .nav-bar {
+        height: 42px;
+    }
+    .input-message {
+        font-size: 15px;
+        height: 50px;
+    }
+    .reactionIcon {
+        width: 33px;
+        height: 34px;
+    }
+    .btnSendPic {
+        width: 33px;
+        height: 34px;
+    }
+    .btnSendAudio {
+        width: 37px;
+        height: 34px;
+    }
+    .btn-send {
+        height: 27.9px;
+        width: 33px;
+        right: 2.2%;
+    }
+    .reply-bar {
+        padding: 9px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .footerContainer {
+        padding-bottom: 2.5%;
+    }
+    .nav-bar {
+        height: 40px;
+    }
+    .input-message {
+        font-size: 15px;
+        height: 48px;
+    }
+    .reactionIcon {
+        width: 31px;
+        height: 32px;
+    }
+    .btnSendPic {
+        width: 31px;
+        height: 32px;
+    }
+    .btnSendAudio {
+        width: 35px;
+        height: 32px;
+    }
+    .btn-send {
+        height: 25.9px;
+        width: 31px;
+        right: 2.2%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .nav-bar {
+        height: 38px;
+    }
+    .input-message {
+        font-size: 14px;
+        height: 46px;
+    }
+    .reactionIcon {
+        width: 29px;
+        height: 30px;
+    }
+    .btnSendPic {
+        width: 29px;
+        height: 30px;
+    }
+    .btnSendAudio {
+        width: 33px;
+        height: 30px;
+    }
+    .btn-send {
+        height: 22.9px;
+        width: 29px;
+        right: 2.4%;
+    }
+}

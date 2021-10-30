@@ -1,0 +1,126 @@
+.header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    padding-right: 1%;
+    padding-left: 1%;
+    justify-content: space-between;
+    text-align: center;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.containerInfo {
+    display: flex;
+}
+
+.imgAvaContainer {
+    margin: auto;
+    width: 100px;
+    height: 85%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.avaHeader {
+    height: 61px;
+    width: 61px;
+    margin-top: 5px;
+    margin-left: 12px;
+    background-size: cover;
+    background-image: url(../img/ava2.png);
+}
+
+.nickname {
+    padding-left: 8%;
+    white-space: nowrap;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 550;
+    color: white;
+    font-family: 'Trispace', sans-serif;
+}
+
+.btnLogOut {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 55px;
+    height: 55px;
+    cursor: url('../img/mouse-pointer.png'), auto;
+    background-size: cover;
+    border: none;
+    background-image: url(../img/logoutIcon.png);
+}
+
+.btnLogOut:hover {
+    transition: 0.3s all ease-in-out;
+    opacity: 0.7;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:541px) {
+    .containerInfo {
+        padding-left: 2%;
+    }
+    .imgAvaContainer {
+        width: 75px;
+        height: 61px;
+    }
+    .avaHeader {
+        height: 49px;
+        width: 49px;
+        margin-top: 6px;
+        margin-left: 6.7px;
+    }
+    .nickname {
+        font-size: 20px;
+        font-weight: 550;
+    }
+    .btnLogOut {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .containerInfo {
+        padding-left: 2%;
+    }
+    .imgAvaContainer {
+        width: 75px;
+        height: 61px;
+    }
+    .avaHeader {
+        height: 49px;
+        width: 49px;
+        margin-left: 7.2px;
+    }
+    .nickname {
+        font-size: 18px;
+    }
+    .btnLogOut {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .imgAvaContainer {
+        width: 55px;
+        height: 50px;
+    }
+    .avaHeader {
+        height: 37px;
+        width: 37px;
+        margin-left: 4.4px;
+    }
+    .nickname {
+        font-size: 16px;
+    }
+    .btnLogOut {
+        width: 35px;
+        height: 35px;
+    }
+}

@@ -1,0 +1,424 @@
+/* Text animation */
+
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+@keyframes blur-text {
+    0% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(4px);
+    }
+}
+
+
+/* IMG Animation */
+
+@-webkit-keyframes fontAnim {
+    0% {
+        width: 7ch;
+    }
+    16% {
+        width: 8ch;
+    }
+    32% {
+        width: 9ch;
+    }
+    48% {
+        width: 10ch;
+    }
+    64% {
+        width: 11ch;
+    }
+    80% {
+        width: 12ch;
+    }
+    100% {
+        width: 13ch;
+    }
+}
+
+@-webkit-keyframes headAnim {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes bodyAnim {
+    0% {
+        top: -5px;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: -5px;
+    }
+}
+
+.animationWait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.view-wait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.dau {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    /* margin: -90px auto; */
+    z-index: 1;
+    margin-top: 250px;
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50px;
+    box-shadow: inset -4px 2px 0px 0px rgba(240, 220, 220, 1);
+    -webkit-animation: headAnim 1.5s infinite alternate;
+    -webkit-animation-timing-function: ease-out;
+}
+
+.mat {
+    width: 20px;
+    height: 8px;
+    margin-top: 290px;
+    margin-left: -40px;
+    background-color: white;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    z-index: 5;
+    box-shadow: 40px 0px 0px 0px rgba(240, 220, 220, 1);
+    -webkit-animation: headAnim 1.5s infinite alternate;
+    -webkit-animation-timing-function: ease-out;
+}
+
+.than {
+    position: absolute;
+    margin-top: 297px;
+    width: 140px;
+    height: 120px;
+    background-color: black;
+    border-radius: 50px/25px;
+    box-shadow: inset -5px 2px 0px 0px rgba(240, 220, 220, 1);
+    -webkit-animation: bodyAnim 1.5s infinite alternate;
+    -webkit-animation-timing-function: ease-out;
+}
+
+.tay {
+    -webkit-backface-visibility: hidden;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: -1px -4px 0px 0px rgba(240, 220, 220, 1);
+    -webkit-transform: rotate(45deg);
+    width: 120px;
+    height: 120px;
+    margin-top: 335px;
+    margin-left: -7px;
+    position: absolute;
+    z-index: 1;
+    -webkit-animation: bodyAnim 1.5s infinite alternate;
+    -webkit-animation-timing-function: ease-out;
+}
+
+.loadingText {
+    margin-top: 170px;
+}
+
+.loadingTextWords span {
+    display: inline-block;
+    margin: 0 5px;
+    color: #fff;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 18px;
+}
+
+.loadingTextWords span:nth-child(1) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(2) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(3) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(4) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(5) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(6) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(7) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(8) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1.4s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(9) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1.6s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(10) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 1.8s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(11) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 2s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(12) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 2.2s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(13) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 2.4s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(14) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 2.6s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(15) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 2.8s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(16) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 3s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(17) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 3.2s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(18) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 3.4s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(19) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 3.6s infinite linear alternate;
+}
+
+.loadingTextWords span:nth-child(20) {
+    filter: blur(0px);
+    animation: blur-text 1.5s 3.8s infinite linear alternate;
+}
+
+.view-wait button,
+.view-wait button::after {
+    top: 10%;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Trispace', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 40px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    cursor: url('../img/mouse-pointer.png'), auto;
+    content: 'HỦY';
+}
+
+.view-wait button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: 'HỦY';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+}
+
+.view-wait button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width:541px) {
+    .dau {
+        margin-top: 170px;
+        width: 80px;
+        height: 80px;
+    }
+    .mat {
+        width: 20px;
+        height: 8px;
+        margin-top: 200px;
+    }
+    .than {
+        margin-top: 217px;
+        width: 140px;
+        height: 120px;
+    }
+    .tay {
+        width: 120px;
+        height: 120px;
+        margin-top: 255px;
+        margin-left: -7px;
+    }
+    .loadingText {
+        margin-top: 170px;
+    }
+    .loadingTextWords span {
+        margin: 0 5px;
+        font-size: 16px;
+    }
+    .icon-modal-container {
+        width: 94%;
+        height: 40%;
+        bottom: 16.5%;
+        left: 3%;
+    }
+    .title-icon-modal {
+        font-size: 22px;
+        padding: 3.5% 0% 3.5% 0%;
+    }
+    .icon-modal {
+        font-size: 25px;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .dau {
+        margin-top: 34%;
+        width: 77px;
+        height: 77px;
+    }
+    .mat {
+        width: 17px;
+        height: 7px;
+        margin-top: 45.5%;
+    }
+    .than {
+        margin-top: 51%;
+        width: 137px;
+        height: 117px;
+    }
+    .tay {
+        width: 117px;
+        height: 117px;
+        margin-top: 59.3%;
+        margin-left: -7px;
+    }
+    .loadingText {
+        margin-top: 58%;
+    }
+    .loadingTextWords span {
+        margin: 0 3.7px;
+        font-size: 16px;
+    }
+    .view-wait button {
+        font-size: 20px;
+        top: 7%;
+        width: 100px;
+        height: 40px;
+    }
+    .icon-modal-container {
+        width: 94%;
+        height: 35%;
+        bottom: 18%;
+    }
+    .title-icon-modal {
+        font-size: 19px;
+    }
+    .icon-modal {
+        font-size: 22px;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .icon-modal-container {
+        bottom: 20%;
+    }
+    .title-icon-modal {
+        font-size: 17px;
+    }
+    .icon-modal {
+        font-size: 19px;
+        height: 90%;
+    }
+    .tay {
+        margin-top: 60.3%;
+    }
+    .loadingTextWords span {
+        margin: 0 3px;
+        font-size: 16px;
+    }
+    .view-wait button {
+        font-size: 17px;
+        top: 9%;
+        width: 90px;
+        height: 35px;
+    }
+    .icon-modal-container {
+        width: 94%;
+        height: 35%;
+        bottom: 18%;
+    }
+    .title-icon-modal {
+        font-size: 19px;
+    }
+    .icon-modal {
+        font-size: 22px;
+        height: 90%;
+    }
+}

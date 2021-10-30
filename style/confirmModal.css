@@ -1,0 +1,239 @@
+@keyframes goin {
+    from {
+        opacity: 0;
+        top: 300px;
+    }
+    to {
+        opacity: 1;
+        top: 150px
+    }
+}
+
+.confirm-modal {
+    padding: 20px;
+    padding-bottom: 30px;
+    border-radius: 5%;
+    background-color: black;
+    width: 330px;
+    animation: goin 0.5s;
+    text-align: center
+}
+
+.confirm-modal .title {
+    font-family: 'Trispace', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+.confirm-modal p {
+    margin: 15px 0px;
+}
+
+.confirm-modal .btn-area {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.confirm-modal .btn-confirm {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 12px;
+    cursor: url('../img/mouse-pointer.png'), auto;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+
+.confirm-modal .btn-confirm:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: url('../img/mouse-pointer.png'), auto;
+}
+
+.confirm-modal .yes,
+.confirm-modal .yes::after {
+    top: 20px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Trispace', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 40px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.confirm-modal .yes::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+}
+
+.confirm-modal .yes:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+    animation-iteration-count: infinite;
+}
+
+.confirm-modal .no,
+.confirm-modal .no::after {
+    top: 20px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Trispace', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #4913b6 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 40px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.confirm-modal .no::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #4913b6 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+}
+
+.confirm-modal .no:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+    animation-iteration-count: infinite;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:541px) {
+    .confirm-modal {
+        padding: 17px;
+        padding-bottom: 27px;
+        width: 280px;
+    }
+    .confirm-modal .title {
+        font-size: 18px;
+        padding: 12px 0px;
+    }
+    .confirm-modal .btn-area {
+        padding: 1px 0px;
+    }
+    .confirm-modal .btn-confirm {
+        padding: 1px 1px;
+        margin: 4px 12px;
+    }
+    .confirm-modal .yes,
+    .confirm-modal .yes::after {
+        top: 17px;
+        width: 95px;
+        font-size: 14px;
+    }
+    .confirm-modal .no,
+    .confirm-modal .no::after {
+        top: 17px;
+        width: 95px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .confirm-modal .btn-area {
+        padding: 0px 0px;
+        padding-top: 15px;
+    }
+    .confirm-modal .btn-confirm {
+        padding: 0px 0px;
+        margin: 0px 10px;
+        height: 45px;
+    }
+    .confirm-modal .yes,
+    .confirm-modal .yes::after {
+        top: 0px;
+        width: 85px;
+        font-size: 14px;
+    }
+    .confirm-modal .no,
+    .confirm-modal .no::after {
+        top: 0px;
+        width: 85px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .confirm-modal {
+        padding: 13px;
+        padding-bottom: 27px;
+        width: 240px;
+    }
+    .confirm-modal .title {
+        font-size: 15px;
+        padding: 0px 0px;
+    }
+    .confirm-modal .btn-area {
+        padding: 0px 0px;
+        padding-top: 15px;
+    }
+    .confirm-modal .btn-confirm {
+        padding: 0px 0px;
+        margin: 0px 12px;
+        height: 40px;
+    }
+    .confirm-modal .yes,
+    .confirm-modal .yes::after {
+        top: 0px;
+        width: 75px;
+        font-size: 12px;
+    }
+    .confirm-modal .no,
+    .confirm-modal .no::after {
+        top: 0px;
+        width: 75px;
+        font-size: 12px;
+    }
+}
